@@ -19,14 +19,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #name {
-	background-color: darkorange;
 	margin-top: 0;
+}
+
+#name:not(.guessed) {
+	visibility: hidden;
 }
 
 #control-holder {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-evenly;
+	text-align: center;
+}
+
+#guess-holder {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 	align-items: center;
 	align-content: space-evenly;
 	text-align: center;
@@ -46,4 +58,9 @@ button:disabled {
 	background: grey;
 	color: darkgrey;
 	border-color: unset;
+}
+
+input {
+	font-family: inherit;
+	font-size: inherit;
 }

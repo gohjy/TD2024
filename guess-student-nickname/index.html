@@ -5,19 +5,25 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Guess Student based on Nickname</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="./style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 	<h3 id="header">Guess Student by Nickname</h3>
 	<h1 id="nickname">...</h1>
 	<h2 id="name">???</h2>
+	<div id="guess-holder">
+		<input type="text" id="guess" placeholder="Guess the name"/>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<button id="guess-button">Guess</button>
+	</div>
+	<p></p>
 	<div id="control-holder">
 		<button id="back" disabled>Back</button>
 		<span id="prog">Waiting...</span>
 		<button id="next">Next</button>
 	</div>
-	<script src="script.js"></script>
+	<script src="./script.js"></script>
 </body>
 
 </html>
