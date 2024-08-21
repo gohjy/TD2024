@@ -77,6 +77,7 @@ function guesser() {
 		message.textContent = "Incorrect guess!";
 	}
 }
+
 function setup() {
 	for (i of personinfo) {
 		if (i === null) continue;
@@ -86,9 +87,8 @@ function setup() {
 	realname.textContent = personinfo[current][1];
 	prog.textContent = `${current} / ${total}`;
 	guessbut.addEventListener("click", guesser);
+	backbut.addEventListener("click", prevslide);
+	nextbut.addEventListener("click", nextslide);
 };
 
-
-backbut.addEventListener("click", prevslide);
-nextbut.addEventListener("click", nextslide);
 setup();
