@@ -67,7 +67,7 @@ function nextslide() {
 };
 
 function guesser() {
-	if (guess.value.toLowerCase() == personinfo[current][1].toLowerCase()) {
+	if (guess.value.toLowerCase().trim() == personinfo[current][1].toLowerCase().trim()) {
 		guess.value = "";
 		realname.classList.add("guessed");
 		personinfo[current][2] = true;
